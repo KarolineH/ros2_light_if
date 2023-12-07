@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 package_name = 'ros2_light_if'
 submodules = "ros2_light_if/dmx_light_interface"
@@ -6,7 +6,7 @@ submodules = "ros2_light_if/dmx_light_interface"
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -21,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'astora_node = rso2_light_if.astora_node:main'
+            'astora_node = ros2_light_if.astora_node:main'
         ],
     },
 )
