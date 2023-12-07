@@ -1,7 +1,7 @@
 from setuptools import setup
 
-package_name = 'astora_lights'
-submodules = "astora_lights/dmx_light_interface"
+package_name = 'ros2_light_if'
+submodules = "ros2_light_if/dmx_light_interface"
 
 setup(
     name=package_name,
@@ -16,12 +16,12 @@ setup(
     zip_safe=True,
     maintainer='Karoline Heiwolt',
     maintainer_email='karoline@heiwolt.de',
-    description='ROS2 package for interfacing one or multiple ASTORA soft panels via DMX',
+    description='ROS2 wrapper for python interface to control one or multiple ASTORA soft panels via DMX',
     license='MIT License, Copyright 2023 Karoline Heiwolt',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'astora_node = astora_lights.astora_node:main'
+            'astora_node = rso2_light_if.astora_node:main'
         ],
     },
 )

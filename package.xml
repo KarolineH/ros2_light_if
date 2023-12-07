@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>astora_lights</name>
+  <name>ros2_light_if</name>
   <version>0.0.0</version>
-  <description>ROS2 package for interfacing one or multiple ASTORA soft panels via DMX</description>
+  <description>ROS2 wrapper for python interface to control one or multiple ASTORA soft panels via DMX</description>
   <maintainer email="karoline@heiwolt.de">Karoline Heiwolt</maintainer>
   <license>MIT License, Copyright 2023 Karoline Heiwolt</license>
 
