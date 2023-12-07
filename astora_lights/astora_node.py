@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer
 
-from .astora_if import ASTORA_Lights
+from .dmx_light_interface.astora_if import ASTORA_Lights
 from capture_types.srv import LightParams
 from capture_types.action import LightsFade
 

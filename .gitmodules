@@ -1,0 +1,3 @@
+[submodule "astora_lights/dmx_light_interface"]
+	path = astora_lights/dmx_light_interface
+	url = https://github.com/KarolineH/dmx_light_interface.git

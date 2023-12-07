@@ -1,6 +1,7 @@
 from setuptools import setup
 
 package_name = 'astora_lights'
+submodules = "astora_lights/dmx_light_interface"
 
 setup(
     name=package_name,
